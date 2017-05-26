@@ -72,7 +72,7 @@ $fbpost-barckground: #f6f7f9;
     }
   }
 
-  /* these styles were inside "> li {" block, moved to suit codacy rules */
+  // these styles were inside "> li {" block, moved to suit codacy rules
   .column {
     margin-right: 20px;
 
@@ -105,7 +105,10 @@ $fbpost-barckground: #f6f7f9;
     footer {
       font-size: 13px;
       color: $gray-light;
-      .source, .assignee, .info {
+      
+      .source,
+      .assignee,
+      .info {
         display: inline-block;
         margin-right: 30px;
       }
