@@ -42,30 +42,6 @@ $fbpost-barckground: #f6f7f9;
       .customer-name {
         font-weight: bold;
       }
-
-      footer {
-        font-size: 13px;
-        color: $gray-light;
-        .source, .assignee, .info {
-          display: inline-block;
-          margin-right: 30px;
-        }
-
-        .source {
-          .name {
-            display: inline-block;
-            margin-left: 6px;
-          }
-        }
-
-        .info {
-          color: $gray-light;
-
-          span {
-            margin-right: 15px;
-          }
-        }
-      }
     }
 
     &.simple-row {
@@ -123,6 +99,30 @@ $fbpost-barckground: #f6f7f9;
       .tags {
         display: inline-block;
         margin-left: 15px;
+      }
+    }
+
+    footer {
+      font-size: 13px;
+      color: $gray-light;
+      .source, .assignee, .info {
+        display: inline-block;
+        margin-right: 30px;
+      }
+
+      .source {
+        .name {
+          display: inline-block;
+          margin-left: 6px;
+        }
+      }
+
+      .info {
+        color: $gray-light;
+
+        span {
+          margin-right: 15px;
+        }
       }
     }
 
