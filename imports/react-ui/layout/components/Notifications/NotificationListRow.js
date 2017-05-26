@@ -35,14 +35,14 @@ class NotificationListRow extends Component {
 
     return (
       <li className={classes}>
-        <div className="body" onClick={this.goNotification}>
+        <div className="conversations-list-li-body" onClick={this.goNotification}>
           <NameCard
             user={createdUser}
             firstLine={notification.title}
             secondLine={moment(notification.date).format('DD MMM YYYY, HH:mm')}
           />
         </div>
-        <div className="column markRead">
+        <div className="conversations-list-li-column conversations-list-li-markRead">
           <Tip text="Mark as Read">
             <span onClick={this.markAsRead}>
               <i className="ion-android-radio-button-off" />

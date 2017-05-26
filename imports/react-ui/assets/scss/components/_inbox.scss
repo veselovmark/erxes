@@ -32,18 +32,6 @@ $fbpost-barckground: #f6f7f9;
       }
     }
 
-    .body {
-      flex: 1;
-
-      &:hover {
-        color: $gray-dark;
-      }
-
-      .customer-name {
-        font-weight: bold;
-      }
-    }
-
     &.simple-row {
       padding: 15px;
 
@@ -71,17 +59,37 @@ $fbpost-barckground: #f6f7f9;
       }
     }
   }
+}
 
-  // these styles were inside "> li {" block, moved to suit codacy rules
-  .column {
-    margin-right: 20px;
+.conversations-list-li-column {
+  margin-right: 20px;
 
-    &.markRead {
-      margin-right: 0;
-      >span:hover {
-        cursor: pointer;
-      }
+  &.conversations-list-li-markRead {
+    margin-right: 0;
+    >span:hover{
+      cursor: pointer;
     }
+  }
+}
+
+.conversations-list-li-body {
+  flex: 1;
+
+  &:hover {
+    color: $gray-dark;
+  }
+
+  header {
+    position: relative;
+
+    .tags {
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+
+  .customer-name {
+    font-weight: bold;
   }
 
   .content {
@@ -93,22 +101,10 @@ $fbpost-barckground: #f6f7f9;
     max-height: 20px;
   }
 
-  .body {
-    header {
-      position: relative;
+  footer {
+    font-size: 13px;
+    color: $gray-light;
 
-      .tags {
-        display: inline-block;
-        margin-left: 15px;
-      }
-    }
-
-    footer {
-      font-size: 13px;
-      color: $gray-light;
-    }
-
-    // these were inside "footer {" block
     .source,
     .assignee,
     .info {
@@ -129,10 +125,6 @@ $fbpost-barckground: #f6f7f9;
       span {
         margin-right: 15px;
       }
-    }
-
-    &:hover {
-      color: $gray-dark;
     }
   }
 }
@@ -171,6 +163,7 @@ $fbpost-barckground: #f6f7f9;
         display: block;
         margin-bottom: 5px;
       }
+
       img {
         border-radius: 3px;
       }
