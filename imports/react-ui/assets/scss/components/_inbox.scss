@@ -103,9 +103,8 @@ $fbpost-barckground: #f6f7f9;
       }
     }
   }
-}
 
-.conversations-list {
+  /* these styles were inside "> li {" block, moved to suit codacy rules */
   .column {
     margin-right: 20px;
 
@@ -125,8 +124,13 @@ $fbpost-barckground: #f6f7f9;
     overflow: hidden;
     max-height: 20px;
   }
-}
 
+  .body {
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}
 
 .conversation {
   .message {
