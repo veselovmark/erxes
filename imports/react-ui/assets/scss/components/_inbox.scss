@@ -32,17 +32,6 @@ $fbpost-barckground: #f6f7f9;
       }
     }
 
-    .column {
-      margin-right: 20px;
-    }
-
-    .column.markRead {
-      margin-right: 0;
-      >span:hover {
-        cursor: pointer;
-      }
-    }
-
     .body {
       flex: 1;
 
@@ -117,6 +106,17 @@ $fbpost-barckground: #f6f7f9;
 }
 
 .conversations-list {
+  .column {
+    margin-right: 20px;
+
+    &.markRead {
+      margin-right: 0;
+      >span:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   .content {
     background: none;
     margin: 10px 0;
