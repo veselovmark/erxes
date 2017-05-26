@@ -61,18 +61,21 @@ li {
       margin: 5px 0;
       font-size: 12px;
       max-height: 36px;
-      line-height: 18px;
-
-      .brandname {
-        font-weight: 600;
-      }
+      line-height: 18px;  
     }
+
+    // this block was in ".content" : START
+    .brandname {
+      font-weight: 600;
+    }
+    // this block was in ".content" : END
 
     .tags {
       display: inherit;
     }
   }
 }
+
 .conversations-list-li-body {
   flex: 1;
 
@@ -165,7 +168,7 @@ li {
         margin-bottom: 5px;
       }
 
-      img {
+      > img {
         border-radius: 3px;
       }
     }
