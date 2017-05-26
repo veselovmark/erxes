@@ -79,7 +79,7 @@
 
   button {
     @include transition(background .2s ease);
-    background-color: #6b60a6;
+    background-color: $auth-box-bg-color;
     color: $white;
     text-transform: uppercase;
     font-weight: 600;
@@ -93,7 +93,7 @@
     &:active.focus,
     &:active:focus,
     &:focus {
-      background-color: lighten(#6b60a6, 10%);
+      background-color: lighten($auth-box-bg-color, 10%);
       color: $white;
     }
   }
