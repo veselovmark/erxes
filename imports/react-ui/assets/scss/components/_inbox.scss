@@ -34,12 +34,12 @@ $fbpost-barckground: #f6f7f9;
 
     .column {
       margin-right: 20px;
+    }
 
-      &.markRead {
-        margin-right: 0;
-        >span:hover{
-          cursor: pointer;
-        }
+    .column.markRead {
+      margin-right: 0;
+      >span:hover{
+        cursor: pointer;
       }
     }
 
