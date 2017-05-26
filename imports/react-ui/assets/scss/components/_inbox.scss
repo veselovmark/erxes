@@ -39,14 +39,6 @@ $fbpost-barckground: #f6f7f9;
         color: $gray-dark;
       }
 
-      header {
-        position: relative;
-        .tags {
-          display: inline-block;
-          margin-left: 15px;
-        }
-      }
-
       .customer-name {
         font-weight: bold;
       }
@@ -126,6 +118,14 @@ $fbpost-barckground: #f6f7f9;
   }
 
   .body {
+    header {
+      position: relative;
+      .tags {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+
     &:hover {
       color: $gray-dark;
     }
