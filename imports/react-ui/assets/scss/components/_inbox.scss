@@ -96,6 +96,7 @@ $fbpost-barckground: #f6f7f9;
   .body {
     header {
       position: relative;
+
       .tags {
         display: inline-block;
         margin-left: 15px;
@@ -105,27 +106,28 @@ $fbpost-barckground: #f6f7f9;
     footer {
       font-size: 13px;
       color: $gray-light;
-      
-      .source,
-      .assignee,
-      .info {
+    }
+
+    // these were inside "footer {" block
+    .source,
+    .assignee,
+    .info {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    .source {
+      .name {
         display: inline-block;
-        margin-right: 30px;
+        margin-left: 6px;
       }
+    }
 
-      .source {
-        .name {
-          display: inline-block;
-          margin-left: 6px;
-        }
-      }
+    .info {
+      color: $gray-light;
 
-      .info {
-        color: $gray-light;
-
-        span {
-          margin-right: 15px;
-        }
+      span {
+        margin-right: 15px;
       }
     }
 
