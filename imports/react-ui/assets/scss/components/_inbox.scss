@@ -52,7 +52,7 @@ $fbpost-barckground: #f6f7f9;
 
       header {
         position: relative;
-        .tags{
+        .tags {
           display: inline-block;
           margin-left: 15px;
         }
@@ -60,15 +60,6 @@ $fbpost-barckground: #f6f7f9;
 
       .customer-name {
         font-weight: bold;
-      }
-
-      .content {
-        background: none;
-        margin: 10px 0;
-        cursor: pointer;
-        word-break: break-word;
-        overflow: hidden;
-        max-height: 20px;
       }
 
       footer {
@@ -124,6 +115,18 @@ $fbpost-barckground: #f6f7f9;
     }
   }
 }
+
+.conversations-list {
+  .content {
+    background: none;
+    margin: 10px 0;
+    cursor: pointer;
+    word-break: break-word;
+    overflow: hidden;
+    max-height: 20px;
+  }
+}
+
 
 .conversation {
   .message {
