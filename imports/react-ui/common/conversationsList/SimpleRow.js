@@ -52,7 +52,7 @@ class SimpleRow extends Component {
     const customer = conversation.customer();
     const integration = conversation.integration();
     const brandName = integration.brand && integration.brand().name;
-    const rowClasses = classNames('simple-row', { unread: !isRead });
+    const rowClasses = classNames('conversations-list-li-simple-row', { unread: !isRead });
     // TODO: use embedded tags list of the conversation object
     const tags = TagsCollection.find({
       _id: { $in: conversation.tagIds || [] },
