@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
 import { Wrapper } from '/imports/react-ui/layout/components';
 import { EmptyState } from '/imports/react-ui/common';
 import { InternalNotes } from '/imports/react-ui/customers/containers';
-import { NameCard } from '/imports/react-ui/common';
+import Details from './Details';
 import TaggerSection from './TaggerSection';
 import MessengerSection from './MessengerSection';
 import TwitterSection from './TwitterSection';
@@ -17,20 +16,7 @@ const propTypes = {
 function RightSidebar({ customer }) {
   return (
     <Wrapper.Sidebar>
-      <Wrapper.Sidebar.Section>
-        <h3>Customer details</h3>
-        <ul className="sidebar-list no-link">
-          <li>
-            <NameCard customer={customer} avatarSize={40} />
-          </li>
-          <li>
-            Created
-            <span className="counter">
-              {moment(customer.createdAt).fromNow()}
-            </span>
-          </li>
-        </ul>
-      </Wrapper.Sidebar.Section>
+      <Details customer={customer} />
       <Wrapper.Sidebar.Section>
         <h3>Activities</h3>
         <EmptyState icon={<i className="ion-flash" />} text="No activities" size="small" />

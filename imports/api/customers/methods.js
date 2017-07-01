@@ -6,6 +6,25 @@ import Segments from './segments';
 import { Customers } from './customers';
 
 /**
+ * Customers
+ */
+
+export const editCustomer = new ValidatedMethod({
+  name: 'customers.editCustomer',
+  mixins: [ErxesMixin],
+
+  validate({ id, doc }) {
+    check(id, String);
+    check(doc.name, String);
+    check(doc.email, String);
+  },
+
+  run({ id, doc }) {
+    return Customers.update(id, { $set: doc });
+  },
+});
+
+/**
  * Segments
  */
 

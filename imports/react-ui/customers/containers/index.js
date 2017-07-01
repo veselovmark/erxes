@@ -3,5 +3,6 @@ import CustomerDetails from './CustomerDetails';
 import ManageColumns from './ManageColumns';
 import InternalNotes from './InternalNotes';
 import Sidebar from './Sidebar';
+import EditDetailsForm from './EditDetailsForm';
 
-export { CustomersList, CustomerDetails, ManageColumns, InternalNotes, Sidebar };
+export { CustomersList, CustomerDetails, ManageColumns, InternalNotes, Sidebar, EditDetailsForm };
